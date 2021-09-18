@@ -35,13 +35,20 @@ export default function App() {
         </div>
         <small>
           <a
-            href="https://github.com/SilvijaSvegzde/weather-app-by-Silvija"
+            href="https://github.com/SilvijaSvegzde/weather-app-react"
             target="_blank"
             rel="noreferrer"
           >
             Open-source code
           </a>{" "}
-          by Silvija Svegzde
+          by{" "}
+          <a
+            href="https://fervent-lovelace-c70533.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Silvija Svegzde
+          </a>
         </small>
       </div>
     </div>

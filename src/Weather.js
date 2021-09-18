@@ -44,6 +44,9 @@ export default function Weather(props) {
   if (display) {
     return (
       <div>
+        <h1>
+          {city}, {country}
+        </h1>
         <form onSubmit={handleSubmit} id="city-form">
           <div className="input-container">
             <input
@@ -57,24 +60,27 @@ export default function Weather(props) {
             />
           </div>
         </form>
+        <div className="container">
+          <div className="row">
+            <div className="col-6">
+              <span className="temperature" id="temperature-value">
+                {temperature}
+              </span>
+              <span className="units"> °C </span>
+            </div>
+            <div className="col-6">
+              <img
+                src={icon}
+                alt={description}
+                className="weather-icon"
+                id="icon"
+              />
+            </div>
+          </div>
+        </div>
 
-        <h1>
-          {city}, {country}
-        </h1>
         <h6> {description} </h6>
 
-        <div className="weather-temperature">
-          <img
-            src={icon}
-            alt={description}
-            className="weather-icon"
-            id="icon"
-          />
-          <span className="temperature" id="temperature-value">
-            {temperature}
-          </span>
-          <span className="units"> °C </span>
-        </div>
         <h6 className="description">
           H:<span id="highest">{highest}</span>°C | L:
           <span id="lowest">{lowest}</span>°C

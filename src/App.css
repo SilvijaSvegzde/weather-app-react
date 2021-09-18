@@ -1,12 +1,6 @@
 body {
   font-family: "PT Sans", sans-serif;
-  background: linear-gradient(
-    57.4deg,
-    rgb(249, 206, 183) 4.6%,
-    rgb(234, 174, 202) 26%,
-    rgb(210, 182, 226) 49.1%,
-    rgb(173, 209, 242) 86.5%
-  );
+  background-color: #f6f6f6;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -52,9 +46,6 @@ a:hover {
 }
 
 .weather-icon {
-  position: absolute;
-  right: -10px;
-  top: 25px;
   background: transparent;
   color: grey;
   min-width: 50px;
@@ -84,6 +75,7 @@ a:hover {
 
 .weather-app {
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: #e46161;
   padding: 10px;
   padding-top: 20px;
   border-radius: 10px;

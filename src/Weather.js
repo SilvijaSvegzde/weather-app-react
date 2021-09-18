@@ -40,6 +40,7 @@ export default function Weather(props) {
   function cityInput(event) {
     setInput(event.target.value);
   }
+
   if (display) {
     return (
       <div>

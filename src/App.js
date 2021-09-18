@@ -40,7 +40,7 @@ export default function App() {
             rel="noreferrer"
           >
             Open-source code
-          </a>
+          </a>{" "}
           by Silvija Svegzde
         </small>
       </div>

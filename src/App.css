@@ -40,12 +40,14 @@ a:hover {
   position: relative;
   display: -ms-flexbox;
   display: flex;
-  width: 70%;
+  width: 50%;
   margin-bottom: 15px;
   margin-top: 25px;
 }
 
 .weather-icon {
+  position: absolute;
+  top: 20px;
   background: transparent;
   color: grey;
   min-width: 50px;
@@ -103,8 +105,8 @@ a:hover {
   position: relative;
   margin-right: 5px;
   margin-top: 10px;
-  height: 70px;
-  width: 70px;
+  height: 100px;
+  width: 100px;
 }
 
 .units {

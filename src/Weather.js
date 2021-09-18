@@ -60,7 +60,7 @@ export default function Weather(props) {
             />
           </div>
         </form>
-        <div className="container">
+        <div className="weather-temperature">
           <div className="row">
             <div className="col-6">
               <span className="temperature" id="temperature-value">
@@ -69,16 +69,11 @@ export default function Weather(props) {
               <span className="units"> °C </span>
             </div>
             <div className="col-6">
-              <img
-                src={icon}
-                alt={description}
-                className="weather-icon"
-                id="icon"
-              />
+              {" "}
+              <img src={icon} alt={description} className="icon" id="icon" />
             </div>
           </div>
         </div>
-
         <h6> {description} </h6>
 
         <h6 className="description">

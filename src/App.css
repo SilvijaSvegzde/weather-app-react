@@ -16,13 +16,15 @@ h1 {
   padding-bottom: 5px;
 }
 
-h6 {
-  text-align: center;
+li {
+  list-style-type: none;
   font-size: 14px;
-  line-height: 0.5;
+  line-height: 1.2;
+  margin-left: 40px;
+  text-align: left;
 }
 
-h6::first-letter {
+li::first-letter {
   text-transform: capitalize;
 }
 
@@ -43,14 +45,6 @@ a:hover {
   width: 50%;
   margin-bottom: 15px;
   margin-top: 25px;
-}
-
-.weather-icon {
-  position: absolute;
-  top: 20px;
-  background: transparent;
-  color: grey;
-  min-width: 50px;
 }
 
 .input-field {
@@ -84,10 +78,6 @@ a:hover {
   margin-top: 30px;
 }
 
-.row {
-  margin-top: 40px;
-}
-
 .weather-temperature {
   text-align: center;
 }
@@ -95,24 +85,22 @@ a:hover {
 .temperature {
   position: relative;
   top: 20px;
-  font-size: 64px;
-  font-weight: 100;
+  font-size: 70px;
+  font-weight: 300;
   line-height: 1;
   margin: 0.5;
 }
 
-.weather-temperature img {
-  position: relative;
-  margin-right: 5px;
-  margin-top: 10px;
-  height: 100px;
-  width: 100px;
+.icon {
+  height: 120px;
+  width: 120px;
+  margin-right: 100px;
 }
 
 .units {
   position: relative;
-  top: -10px;
-  font-size: 20px;
+  top: -15px;
+  font-size: 22px;
 }
 
 .scrolling-wrapper {
@@ -139,13 +127,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(
-    111.4deg,
-    rgb(209, 231, 235) 7.4%,
-    rgb(238, 219, 199) 51.4%,
-    rgb(255, 159, 122) 82.6%,
-    rgb(255, 109, 58) 100.2%
-  );
+  background-color: #e46161;
   border: none;
   border-radius: 10px;
 }

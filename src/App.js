@@ -1,5 +1,5 @@
-import "./App.css";
 import React from "react";
+import "./App.css";
 import Weather from "./Weather";
 import "bootstrap/dist/css/bootstrap.css";
 
@@ -29,9 +29,9 @@ export default function App() {
       <div className="container">
         <div className="weather-app-wrapper">
           <div className="weather-app">
-            <h6>
+            <li className="text-center">
               Last updated: {currentDay}, {hours}:{minutes}
-            </h6>
+            </li>
             <br />
             <Weather />
           </div>

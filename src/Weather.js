@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
+import Date from "./Date";
 
 export default function Weather() {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -12,6 +13,7 @@ export default function Weather() {
       ready: true,
       city: response.data.name,
       country: response.data.sys.country,
+      date: new Date(response.data.dt * 1000),
       temperature: Math.round(response.data.main.temp),
       highest: Math.round(response.data.main.temp_max),
       lowest: Math.round(response.data.main.temp_min),
@@ -74,6 +76,9 @@ export default function Weather() {
           <div className="row">
             <div className="col-6">
               <ul>
+                <li>
+                  <Date date={weatherData.date} />
+                </li>
                 <li>
                   Highest: <span id="highest">{weatherData.highest}</span>°C{" "}
                 </li>

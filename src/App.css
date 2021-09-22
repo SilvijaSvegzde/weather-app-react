@@ -13,10 +13,5 @@
 }
 
 a {
-  color: #589aeb;
   text-decoration: underline;
-}
-
-a:hover {
-  color: #142d4c;
 }

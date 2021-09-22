@@ -1,0 +1,59 @@
+.WeatherApp {
+  font-family: "PT Sans", sans-serif;
+  color: #142d4c;
+}
+
+.WeatherApp h1 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.WeatherApp ul {
+  margin: 0;
+  padding: 0;
+}
+
+.WeatherApp li {
+  list-style: none;
+  font-size: 18px;
+  line-height: 1.2;
+}
+
+.WeatherApp li::first-letter {
+  text-transform: capitalize;
+}
+
+.WeatherApp .form-control {
+  margin: 0 auto;
+  display: flex;
+  font-size: 16px;
+  background-color: whitesmoke;
+  cursor: auto;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+form .btn {
+  background-color: #142d4c;
+}
+
+form .btn:hover {
+  background-color: #142d4c;
+}
+
+.WeatherApp .temperature {
+  font-size: 64px;
+  font-weight: bold;
+  line-height: 64px;
+  margin-left: 5px;
+}
+
+.WeatherApp canvas {
+  margin-right: 10px auto;
+  color: #142d4c;
+}
+
+.units {
+  position: relative;
+  top: -30px;
+  font-size: 20px;
+}

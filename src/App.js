@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.css";
-import Weather from "./Weather";
+import WeatherApp from "./WeatherApp";
 import "bootstrap/dist/css/bootstrap.css";
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
       <div className="container">
         <div className="weather-app-wrapper">
           <div className="weather-app">
-            <Weather />
+            <WeatherApp />
           </div>
           <small>
             <a

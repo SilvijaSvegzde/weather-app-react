@@ -43,9 +43,7 @@ export default function WeatherApp() {
   if (weatherData.ready) {
     return (
       <div className="WeatherApp">
-        <li>
-          <CurrentDate date={weatherData.date} />
-        </li>
+        <CurrentDate date={weatherData.date} />
         <br />
         <form onSubmit={handleSubmit} id="city-form">
           <div className="row">

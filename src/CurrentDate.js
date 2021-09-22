@@ -22,8 +22,8 @@ export default function currentDate(props) {
   }
 
   return (
-    <div>
+    <h6>
       Last updated: {day}, {hours}:{minutes}
-    </div>
+    </h6>
   );
 }

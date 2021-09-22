@@ -17,7 +17,15 @@ export default function App() {
               target="_blank"
               rel="noreferrer"
             >
-              Open-source code
+              Open-sourced on GitHub
+            </a>{" "}
+            and{" "}
+            <a
+              href="https://app.netlify.com/sites/wonderful-mirzakhani-944980/overview"
+              target="_blank"
+              rel="noreferrer"
+            >
+              hosted on Netlify
             </a>{" "}
             by{" "}
             <a

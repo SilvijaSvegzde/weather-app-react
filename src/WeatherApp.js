@@ -5,6 +5,7 @@ import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import Loader from "react-loader-spinner";
 import CurrentDate from "./CurrentDate";
 import "./WeatherApp.css";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherApp() {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -67,6 +68,7 @@ export default function WeatherApp() {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
+        <WeatherForecast />
       </div>
     );
   } else {

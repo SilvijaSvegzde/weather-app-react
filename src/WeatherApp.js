@@ -14,6 +14,7 @@ export default function WeatherApp() {
   function showWeather(response) {
     setWeatherData({
       ready: true,
+      coordinates: response.data.coord,
       city: response.data.name,
       country: response.data.sys.country,
       date: new Date(response.data.dt * 1000),
@@ -68,7 +69,8 @@ export default function WeatherApp() {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast />
+        <br />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

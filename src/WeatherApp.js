@@ -47,7 +47,7 @@ export default function WeatherApp() {
       <div className="WeatherApp">
         <CurrentDate date={weatherData.date} />
         <br />
-        <form onSubmit={handleSubmit} id="city-form">
+        <form onSubmit={handleSubmit} id="city-form" className="mt-2">
           <div className="row">
             <div className="col-9">
               <input
@@ -68,7 +68,9 @@ export default function WeatherApp() {
             </div>
           </div>
         </form>
+        <br />
         <WeatherInfo data={weatherData} />
+        <br />
         <br />
         <WeatherForecast coordinates={weatherData.coordinates} />
       </div>

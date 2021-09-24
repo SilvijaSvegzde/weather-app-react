@@ -21,6 +21,7 @@
 
 .WeatherApp li::first-letter {
   text-transform: capitalize;
+  font-size: 17px;
 }
 
 .WeatherApp .form-control {
@@ -41,23 +42,20 @@ form .btn:hover {
 }
 
 .WeatherApp .temperature {
+  position: relative;
   font-size: 64px;
   font-weight: bold;
   line-height: 64px;
-  margin-left: 5px;
+  margin-left: 10px;
 }
 
 .WeatherApp canvas {
-  margin-right: 10px auto;
   color: #142d4c;
 }
 
 .units {
   position: relative;
   top: -30px;
-  font-size: 20px;
-}
-
-.WeatherApp a {
-  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
 }

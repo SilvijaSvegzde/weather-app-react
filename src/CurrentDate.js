@@ -1,6 +1,23 @@
 import React from "react";
 
 export default function currentDate(props) {
+  let year = props.date.getFullYear();
+  let months = [
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+  ];
+  let month = months[props.date.getMonth()];
+  let date = props.date.getDate();
   let days = [
     "Sunday",
     "Monday",
@@ -22,8 +39,13 @@ export default function currentDate(props) {
   }
 
   return (
-    <h6>
-      Last updated: {day}, {hours}:{minutes}
-    </h6>
+    <div>
+      <h5>
+        {month} {date}, {year} <br /> {day}
+      </h5>
+      <h6>
+        Last updated: {hours}:{minutes}
+      </h6>
+    </div>
   );
 }

@@ -1,0 +1,14 @@
+.WeatherForecastDay {
+  font-family: "PT Sans", sans-serif;
+  color: #142d4c;
+}
+
+.forecastTempMin {
+  opacity: 0.9;
+  margin-left: 5px;
+}
+
+.forecastTemperatures,
+.forecastDay {
+  font-size: 17px;
+}

@@ -44,35 +44,37 @@ export default function WeatherApp() {
 
   if (weatherData.ready) {
     return (
-      <div className="WeatherApp">
-        <CurrentDate date={weatherData.date} />
-        <br />
-        <form onSubmit={handleSubmit} id="city-form" className="mt-2">
-          <div className="row">
-            <div className="col-9">
-              <input
-                type="Search"
-                placeholder="Enter a city name..."
-                onChange={cityInput}
-                className="form-control"
-                autoFocus="on"
-                autoComplete="off"
-              />
+      <div className="container">
+        <div className="WeatherApp ">
+          <CurrentDate date={weatherData.date} />
+          <br />
+          <form onSubmit={handleSubmit} id="city-form" className="mt-2">
+            <div className="row">
+              <div className="col-9">
+                <input
+                  type="Search"
+                  placeholder="Enter a city name..."
+                  onChange={cityInput}
+                  className="form-control"
+                  autoFocus="on"
+                  autoComplete="off"
+                />
+              </div>
+              <div className="col-3">
+                <input
+                  type="submit"
+                  value="Search"
+                  className="btn btn-dark w-100"
+                />
+              </div>
             </div>
-            <div className="col-3">
-              <input
-                type="submit"
-                value="Search"
-                className="btn btn-dark w-100"
-              />
-            </div>
-          </div>
-        </form>
-        <br />
-        <WeatherInfo data={weatherData} />
-        <br />
-        <br />
-        <WeatherForecast coordinates={weatherData.coordinates} />
+          </form>
+          <br />
+          <WeatherInfo data={weatherData} />
+          <br />
+          <br />
+          <WeatherForecast coordinates={weatherData.coordinates} />
+        </div>
       </div>
     );
   } else {

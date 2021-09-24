@@ -8,6 +8,9 @@
   font-weight: 400;
 }
 
+.WeatherApp h5::first-letter {
+  text-transform: capitalize;
+}
 .WeatherApp ul {
   margin: 0;
   padding: 0;
@@ -20,7 +23,6 @@
 }
 
 .WeatherApp li::first-letter {
-  text-transform: capitalize;
   font-size: 17px;
 }
 
@@ -35,6 +37,7 @@
 
 form .btn {
   background-color: #142d4c;
+  padding: 5px;
 }
 
 form .btn:hover {

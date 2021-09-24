@@ -4,14 +4,14 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherInfo(props) {
   return (
-    <div className="weatherInfo">
+    <div className="container weatherInfo">
       <br />
       <h1>
         {props.data.city}, {props.data.country}
       </h1>
-      <h5 className="text-capitalize"> {props.data.description} </h5>
+      <h5> {props.data.description} </h5>
       <div className="row mt-3">
-        <div className="col-6">
+        <div className="col-7">
           <div className="d-flex">
             <div>
               <WeatherIcon code={props.data.icon} size={52} />
@@ -22,7 +22,7 @@ export default function WeatherInfo(props) {
           </div>
         </div>
 
-        <div className="col-6">
+        <div className="col-5">
           <ul>
             <li>
               <span>

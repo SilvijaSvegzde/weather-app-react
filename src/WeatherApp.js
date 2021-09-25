@@ -50,7 +50,7 @@ export default function WeatherApp() {
           <br />
           <form onSubmit={handleSubmit} id="city-form" className="mt-2">
             <div className="row">
-              <div className="col-9">
+              <div className="col-8 col-md-9">
                 <input
                   type="Search"
                   placeholder="Enter a city name..."
@@ -60,7 +60,7 @@ export default function WeatherApp() {
                   autoComplete="off"
                 />
               </div>
-              <div className="col-3">
+              <div className="col-4 col-md-3">
                 <input
                   type="submit"
                   value="Search"
